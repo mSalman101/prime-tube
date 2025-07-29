@@ -8,9 +8,6 @@ dotenv.config();
 const PORT = process.env.PORT;
 const DB_URL = process.env.DB_URL;
 
-console.log("Server will run on:", PORT);
-console.log("Database URL is:", DB_URL);
-
 const app = express();
 connectDB()
   .then(() => {
